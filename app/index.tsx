@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { FlatList, Image, Pressable, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import cn from "clsx"
+import CartButton from "@/components/CartButton";
 
 
 export default function Index() {
@@ -55,7 +56,7 @@ export default function Index() {
               <Image source={images.arrowDown} className="size-3" resizeMode="contain" />
             </TouchableOpacity>
           </View>
-          <Text>Cart</Text>
+          <CartButton/>
         </View>
         )}
       />
